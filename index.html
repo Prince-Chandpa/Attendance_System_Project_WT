@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Tracker</title>
+</head>
+
+<body>
+    <h1 id="mainTitle">Student Attendance Tracker</h1>
+
+    <script>
+        student = [
+            {
+                name : 'prince',
+                rollno : 171,
+                enrollment : '24010101034'
+            },
+            {
+                name : 'prince',
+                rollno : 172,
+                enrollment : '24010101035'
+            },
+            {
+                name : 'prince',
+                rollno : 173,
+                enrollment : '24010101036'
+            },
+            {
+                name : 'prince',
+                rollno : 174,
+                enrollment : '24010101037'
+            }
+        ]
+    </script>
+
+    <script>
+        document.write("<table border='1px'>");
+            document.write("<thead>");
+                document.write("<tr>");
+                    document.write("<td>ROLL NO.</td>");
+                    document.write("<td>name</td>");
+                    document.write("<td>Enrollment No.</td>");
+                    document.write("<td>Present</td>");
+                document.write("</tr>");
+            document.write("</thead>");
+            document.write("<tbody>");
+                for(i=0; i<student.length; i++){
+                    document.write("<tr>");
+                        document.write("<td>");
+                            document.write(student[i].rollno);
+                        document.write("</td>");
+
+                        document.write("<td>");
+                            document.write(student[i].name);
+                        document.write("</td>");
+
+                        document.write("<td>");
+                            document.write(student[i].enrollment);
+                        document.write("</td>");
+
+                        document.write("<td>");
+                            document.write("<input type='checkbox' checked = 'checked'>");
+                        document.write("</td>");  
+                    document.write("</tr>");
+                }
+            document.write("</tbody>");
+        document.write("</table>");
+    </script>
+</body>
+
+</html>
